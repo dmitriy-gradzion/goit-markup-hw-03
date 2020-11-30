@@ -51,6 +51,7 @@ ol {
 .header {
   padding-top: 25px;
   padding-bottom: 25px;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .header .container {
@@ -141,12 +142,9 @@ ol {
 /*===============HERO===============*/
 .hero {
   background-color: #2f303a;
-}
-
-.hero .container {
-  min-height: 600px;
   padding-top: 200px;
   padding-bottom: 200px;
+  min-height: 600px;
 }
 
 .title-hero {
@@ -172,10 +170,13 @@ ol {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  /* color: #ffffff;*/
+  background-color: #2196f3;
+  color: #ffffff;
   text-decoration: inherit;
   margin-left: auto;
   margin-right: auto;
+  border: 1px solid #2196f3;
+  cursor: pointer;
   border-radius: 4px;
   height: 50px;
   min-width: 200px;
@@ -184,10 +185,11 @@ ol {
 /*===============END HERO===============*/
 
 /*===============Our Features===============*/
-.features .container {
+.features {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+
 .features-title-box {
   display: none;
 }
@@ -222,7 +224,8 @@ ol {
 /*===============End Our Features===============*/
 
 /*===============About===============*/
-.about .container {
+
+.about {
   padding-bottom: 94px;
 }
 
@@ -236,7 +239,7 @@ ol {
 /*===============End About===============*/
 
 /*===============Team===============*/
-.team .container {
+.team {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -281,16 +284,17 @@ ol {
 
 /*===============Footer===============*/
 .footer {
-  background-color: #2f303a;
-}
-
-.footer .container {
   padding-top: 60px;
   padding-bottom: 60px;
+  background-color: #2f303a;
 }
 
 .text-footer {
   margin-bottom: 20px;
+}
+
+.footer .address-list-item:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 .logo-footer {
